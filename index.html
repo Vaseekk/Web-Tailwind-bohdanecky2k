@@ -7,70 +7,94 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    .text-main-color {
+      color: #7A9D8C;
+    }
+    .gradient1 {
+      background-image: url('/img/g1.svg');
+      background-size: cover;
+      background-position: center;
+    }
+    .background-offset {
+      position: absolute;
+      top: 60px; /* Adjust the offset as needed */
+      left: -60px; /* Adjust the offset as needed */
+      z-index: -1; /* Place it behind the main image */
+      width: 100%;
+      height: 100%;
+    }
+    .image-offset {
+      position: relative;
+      top: -60px; /* Move image up */
+      left: 60px; /* Move image right */
+    }
+  </style>
 </head>
-<body class="pt-10 pb-10">
-  <div class="flex flex-wrap p-5 gap-5 justify-center items-center">
-    <img src="img/1.png" alt="Dům" class="w-150px sm:w-auto">
-    <img src="img/2.png" alt="Dům" class="w-150px sm:w-auto">
-    <img src="img/3.png" alt="Dům" class="w-150px sm:w-auto">
+<body class="mt-10 mb-10 lg:mb-20">
+  <div class="flex flex-wrap mx-auto gap-5 justify-center items-center max-w-xs lg:max-w-screen-lg">
+    <img src="img/1.png" alt="Dům" class="lg:w-1/4 sm:w-auto">
+    <img src="img/2.png" alt="Dům" class="lg:w-1/4 sm:w-auto">
+    <img src="img/3.png" alt="Dům" class="lg:w-1/4 sm:w-auto">
   </div>
-  <div class="text-center roboto-bold">
-    <h2 class="main-color">Plusy</h2> 
-    <div class="grid grid-cols-2 gap-4 p-2.5 max-w-2xl mx-auto">
+  <div class="text-center mt-10 mb-10 max-w-xs mx-auto lg:max-w-screen-lg lg:p-5">
+    <p class="font-bold text-main-color text-3xl lg:p-5">Plusy</p> 
+    <div class="grid grid-cols-2 gap-4 p-2.5 max-w-2xl mx-auto lg:gap-8 lg:gap-x-20 lg:grid-cols-4">
       <div class="m-2 text-center flex flex-col items-center">
         <img src="/img/i1.svg" class="h-16 w-16" alt="ikona">
-        <p>1 ha soukromého lesoparku</p>
+        <p class="font-bold">1 ha soukromého lesoparku</p>
       </div>
-      <div class="m-2 text-center flex flex-col items-center">
+      <div class="m-2 text-center flex flex-col items-center ">
         <img src="/img/i2.svg" class="h-16 w-16" alt="ikona">
-        <p>Wellness s bazénem a saunou</p>
+        <p class="font-bold">Wellness s bazénem a saunou</p>
       </div>
       <div class="m-2 text-center flex flex-col items-center">
         <img src="/img/i3.svg" class="h-16 w-16" alt="ikona">
-        <p>Místnost pro rodinného lékaře</p>
+        <p class="font-bold">Místnost pro rodinného lékaře</p>
       </div>
       <div class="m-2 text-center flex flex-col items-center">
         <img src="/img/i4.svg" class="h-16 w-16" alt="ikona">
-        <p>Shuttle privátní doprava</p>
+        <p class="font-bold">Shuttle privátní doprava</p>
       </div>
       <div class="m-2 text-center flex flex-col items-center">
         <img src="/img/i5.svg" class="h-16 w-16" alt="ikona">
-        <p>Venkovní posilovna a tělocvična v interiéru</p>
+        <p class="font-bold">Venkovní posilovna a tělocvična v interiéru</p>
       </div>
       <div class="m-2 text-center flex flex-col items-center">
         <img src="/img/i6.svg" class="h-16 w-16" alt="ikona">
-        <p>Umývárna kol a psů</p>
+        <p class="font-bold">Umývárna kol a psů</p>
       </div>
       <div class="m-2 text-center flex flex-col items-center">
         <img src="/img/i7.svg" class="h-16 w-16" alt="ikona">
-        <p>Dětský klub</p>
+        <p class="font-bold">Dětský klub</p>
       </div>
       <div class="m-2 text-center flex flex-col items-center">
         <img src="/img/i8.svg" class="h-16 w-16" alt="ikona">
-        <p>Přímé napojení na cyklostezku</p>
+        <p class="font-bold">Přímé napojení na cyklostezku</p>
       </div>
     </div>
   </div>
-  <div class="flex flex-col items-center justify-center gradient max-w-xs shadow-xl rounded-xl mx-auto">
-    <div class="">
-      <img src="/img/4.png" class="w-80" alt="Dum">
+  <div class="flex flex-col items-center gradient1 justify-center mb-10 max-w-xs shadow-xl rounded-xl mx-auto lg:flex-row lg:max-w-screen-lg lg:h-96">
+    <div class="lg:flex-shrink-0 lg:h-full">
+      <img src="/img/4.png" class="w-80 lg:w-auto lg:h-full" alt="Dum">
     </div>
-    <div class="m-2 text-center">
-      <p>
+    <div class="m-2 text-center p-6 rounded-lg lg:text-left">
+      <p class="text-sm lg:text-base">
         Vestibulum fermentum tortor id mi. Phasellus rhoncus. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Aliquam in lorem sit amet leo accumsan lacinia.
-        <br>
+        <br><br>
         Aliquam erat volutpat. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci.
       </p>
     </div>
   </div>
-  <div class="flex flex-col items-center justify-center max-w-xs rounded-xl mx-auto">
-    <div class="">
-      <img src="/img/5.png" class="w-80 shadow rounded-xl" alt="Dum">
+  <div class="flex flex-col items-center justify-center max-w-xs rounded-xl mx-auto lg:flex-row-reverse lg:max-w-screen-lg lg:h-96 relative lg:mt-20">
+    <div class="lg:flex-shrink-0 lg:h-full relative">
+      <img src="/img/g2.png" class="background-offset hidden lg:block lg:h-full lg:w-80" alt="Pozadí">
+      <img src="/img/5.png" class="w-80 shadow rounded-xl lg:w-auto lg:h-full lg:image-offset z-10" alt="Dum">
     </div>
-    <div class="m-2 text-center">
-      <p>
+    <div class="m-2 text-center p-6 rounded-lg lg:flex-1 lg:h-full">
+      <p class="text-sm text-center lg:text-base lg:flex lg:text-left">
         Celý areál je navržen jako uzavřený komunitní prostor, což znamená, že do něj mají přístup pouze jeho obyvatelé. Tím je zajištěna nejen větší míra bezpečí, ale i klidné prostředí pro všechny, kteří chtějí žít ve svém vlastním malém ráji blízko přírody.
-        <br>
+        <br><br>
         Tento projekt je spojením moderní architektury, přírodního prostředí a rozmanitých služeb, které mají za cíl zpříjemnit život obyvatelům. Skvělá poloha poblíž parku Smetanka a promyšlené dispozice, vysoké standardy a důraz na ekologii dělají z tohoto místa nejen rezidenční komplex, ale celkově harmonický prostor pro kvalitní život.
       </p>
     </div>

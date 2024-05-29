@@ -2,28 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .max-w-288px {
-    height: 288px;
-  }
-}
-
 body{
     font-family: Roboto;
-}
-
-.gradient{
-    background-image: url('img/g1.svg'); /* Cesta k vašemu obrázku */
-    background-size: cover; /* Přizpůsobí obrázek velikosti elementu */
-    background-position: center; /* Zarovná obrázek na střed */
-    background-repeat: no-repeat; /* Zabrání opakování obrázku */
-    position: relative; /* Nastaví pozici elementu */
-    z-index: -1; /* Umístí obrázek za text */
-    border-radius: 10px;
-}
-
-.main-color{
-    color: #7A9D8C;
 }
 
 .roboto-thin {
